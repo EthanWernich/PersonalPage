@@ -278,14 +278,38 @@ img.startup-card-icon {
 @media (max-width: 768px) {
   .profile-container {
     padding: 0.5rem;
+    min-height: auto;
   }
   .profile-left {
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem 1rem 1rem 1rem;
     min-width: 220px;
     max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
   }
   .profile-name {
     font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+  }
+  .profile-meta {
+    margin-bottom: 0.8rem;
+  }
+  .profile-tagline {
+    margin-bottom: 0.8rem;
+  }
+  .profile-socials {
+    margin: 0.8rem 0 1rem 0;
+  }
+  .profile-indie-btn {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .startup-cards {
+    gap: 1rem;
   }
   .startup-card {
     padding: 1.2rem 1rem 1rem 1rem;
