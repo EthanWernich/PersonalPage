@@ -1,0 +1,294 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #eceaea;
+  padding: 2rem 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.profile-left {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.06);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin-right: 2.5rem;
+  min-width: 380px;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 6px solid #fff;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+  background: #ffeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-name {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.profile-meta {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 1.2rem;
+}
+
+.profile-tagline {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.2rem;
+}
+
+.profile-newsletter {
+  width: 100%;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+.profile-bold {
+  font-weight: 700;
+  color: #222;
+}
+.profile-link {
+  color: #ff3131;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.profile-form {
+  display: flex;
+  margin-top: 0.7rem;
+}
+.profile-form input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 2px solid #ff3131;
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+}
+.profile-form button {
+  background: #ff3131;
+  color: #fff;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  padding: 0 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.profile-form button:hover {
+  background: #ffeaea;
+  color: #ff3131;
+}
+.profile-emoji {
+  font-size: 1.2rem;
+}
+.profile-socials {
+  display: flex;
+  gap: 1.2rem;
+  margin: 1.2rem 0 1.5rem 0;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+.profile-socials a {
+  color: #888;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  background: transparent;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.profile-socials a:hover {
+  color: #ff3131;
+  border-color: #ff3131;
+  background: #ffeaea;
+  transform: scale(1.1);
+}
+.profile-indie-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+  margin-bottom: 1rem;
+}
+.profile-indie-btn:hover {
+  background: #ff3131;
+  color: #fff;
+}
+
+.profile-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 950px;
+}
+
+.startup-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 2rem;
+  width: 100%;
+}
+
+.startup-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #222;
+  transition: box-shadow 0.2s, transform 0.2s;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid rgba(0,0,0,0.04);
+  max-width: 600px;
+}
+.startup-card:hover {
+  box-shadow: 0 6px 32px rgba(255,184,0,0.13);
+  transform: translateY(-4px) scale(1.02);
+}
+.startup-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.7rem;
+  gap: 0.7rem;
+}
+.startup-card-icon {
+  font-size: 1.5rem;
+  margin-right: 0.7rem;
+}
+
+// Style for images that have the startup-card-icon class
+img.startup-card-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+  font-size: 0; // Remove any font-size inheritance
+}
+
+.startup-card-title {
+  font-weight: 800;
+  font-size: 1.15rem;
+  flex: 1;
+}
+.startup-card-income {
+  background: #ffeaea;
+  color: #ff3131;
+  border-radius: 8px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-left: 0.7rem;
+}
+.startup-card-desc {
+  color: #444;
+  font-size: 1.05rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.4;
+}
+.startup-card-chart {
+  height: 48px;
+  background: #ffeaea;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  /* Placeholder for chart, can be replaced with SVG/chart later */
+
+  // Style for text content (like "Discontinued")
+  &:not(:empty) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffeaea;
+    color: #ff3131;
+    font-size: 0.95rem;
+    font-weight: 700;
+    padding: 0.2rem 0.7rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .profile-left {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    min-width: 320px;
+    max-width: 500px;
+    width: 100%;
+  }
+  .profile-right {
+    max-width: 100%;
+  }
+  .startup-cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+  }
+  .startup-card {
+    width: 100%;
+    min-width: 0;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 0.5rem;
+  }
+  .profile-left {
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    min-width: 220px;
+    max-width: 100%;
+  }
+  .profile-name {
+    font-size: 1.8rem;
+  }
+  .startup-card {
+    padding: 1.2rem 1rem 1rem 1rem;
+  }
+}
+
