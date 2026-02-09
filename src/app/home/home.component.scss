@@ -425,13 +425,23 @@
   padding: 1rem;
   background: var(--bg-primary);
   border-radius: var(--radius-md);
+  & + .certificate-item {
+    margin-top: 0.75rem;
+  }
 }
 
 .certificate-icon {
   flex-shrink: 0;
-  
+
   svg {
     display: block;
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+    display: block;
+    object-fit: contain;
   }
 }
 
